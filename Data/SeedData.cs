@@ -1,8 +1,11 @@
 ﻿using best_movies_api.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 
 namespace best_movies_api.Data
 {
@@ -234,11 +237,24 @@ namespace best_movies_api.Data
                 },
             };
 
+            List<IdentityUser> users = new List<IdentityUser>() {
+                new IdentityUser
+                {
+                    UserName = "admin",
+                    Email = "admin@lms.com",
+                    EmailConfirmed = true,
+                }
+            };
+
 
             ServiceCollection services = new ServiceCollection();
             services.AddLogging();
             services.AddDbContext<ApplicationDbContext>(options =>
                options.UseSqlServer(connectionString));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+               .AddEntityFrameworkStores<ApplicationDbContext>();
+
 
             using (ServiceProvider serviceProvider = services.BuildServiceProvider())
             {
@@ -246,6 +262,28 @@ namespace best_movies_api.Data
                 {
                     ApplicationDbContext context = scope.ServiceProvider.GetService<ApplicationDbContext>();
                     context.Database.Migrate();
+
+                    UserManager<IdentityUser> userMgr = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+                    RoleManager<IdentityRole> roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+                    if (!roleManager.RoleExistsAsync("SuperAdmin").Result)
+                    {
+                        IdentityResult res = roleManager.CreateAsync(new IdentityRole("SuperAdmin")).Result;
+                    }
+                   
+                    foreach (IdentityUser user in users)
+                    {
+                        IdentityUser dbUser = userMgr.FindByNameAsync(user.UserName).Result;
+                        if (dbUser == null)
+                        {
+                            IdentityResult result = userMgr.CreateAsync(user, "Admin@123").Result;
+                            if (result.Succeeded)
+                            {
+                                IdentityResult res = userMgr.AddToRoleAsync(user, "SuperAdmin").Result;
+                            }
+                        }
+                    }
                     foreach (Movie movie in movies)
                     {
                         //check if exists..
