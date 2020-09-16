@@ -11,6 +11,6 @@ namespace best_movies_api.Models
         public string Name { get; set; }
         public int MovieId { get; set; }
         [ForeignKey("MovieId")]
-        public virtual MovieViewModel Movie { get; set; }
+        public virtual Movie Movie { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace best_movies_api
         public List<MovieSoundEffect> SoundEffects { get; set; }
         public List<MovieStills> Stills { get; set; }
         public string Title { get; set; }
+        public string Location { get; set; }
     }
 
     public enum ListingType
