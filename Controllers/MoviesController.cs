@@ -39,5 +39,21 @@ namespace best_movies_api.Controllers
                 return new BadRequestObjectResult(new { Message = ex.ToString() });
             }
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetMovie(int id)
+        {
+
+            try
+            {
+                var movie = this.movieService.GetMovie(id);
+                var moviesViewModel = mapper.Map<MovieViewModel>(movie);
+                return Ok(moviesViewModel);
+            }
+            catch (Exception ex)
+            {
+                return new BadRequestObjectResult(new { Message = ex.ToString() });
+            }
+        }
     }
 }
