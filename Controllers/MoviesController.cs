@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using best_movies_api.Models.ViewModels;
 using best_movies_api.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace best_movies_api.Controllers
 {
     [ApiController]
-    [Route("movies")]
+    [Authorize]
+    [Route("api/movies")]
     public class MoviesController : ControllerBase
     {
         private readonly ILogger<MoviesController> _logger;
