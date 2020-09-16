@@ -35,7 +35,7 @@ namespace best_movies_api.Services
                 if (!string.IsNullOrEmpty(request.Filter.Search))
                 {
                     //search with title
-                    query = query.Where(x=>x.Title.StartsWith(request.Filter.Search));
+                    query = query.Where(x=>x.Title.Contains(request.Filter.Search));
                 }
                 if (!string.IsNullOrEmpty(request.Filter.Location))
                 {
