@@ -18,6 +18,7 @@ namespace best_movies_api.Models.ViewModels
     public class MovieFilter : BaseFilter
     {
         public string Location { get; set; }
+        public string Language { get; set; }
     }
     public class BaseFilter
     {

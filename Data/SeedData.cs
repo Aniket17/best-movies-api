@@ -41,7 +41,197 @@ namespace best_movies_api.Data
                             Name = "SDDS",
                         }
                     }
-                }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption2",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption3",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption4",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption5",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption6343",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption6232",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption634343",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption4346",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption632",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
+                new Movie(){
+                    Title = "The Shawshank Redemption12",
+                    Language = "ENGLISH",
+                    Location = "Delhi",
+                    Stills = movieStills,
+                    ImdbId = "tt0111161",
+                    ListingType = ListingType.Now_Showing,
+                    ImdbRating = 9.2,
+                    Plot = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                    Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg",
+                    SoundEffects = new List<MovieSoundEffect>(){
+                        new MovieSoundEffect(){
+                            Name = "RX6",
+                        },
+                        new MovieSoundEffect(){
+                            Name = "SDDS",
+                        }
+                    }
+                },
             };
 
 
